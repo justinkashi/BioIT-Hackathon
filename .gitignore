@@ -1,0 +1,34 @@
+# Large data files — raw downloads excluded, but track directory placeholders
+data/raw/*
+data/external/*
+!data/raw/.gitkeep
+!data/external/.gitkeep
+*.gctx
+*.gct
+
+# Conda / Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.env
+.venv
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*_executed.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Results (regenerable) — keep CSVs but not large parquets
+data/processed/*.parquet
+
+# Keep processed gene lists (small text files) and directory placeholder
+!data/processed/*.txt
+!data/processed/.gitkeep
+!results/figures/.gitkeep
