@@ -1,0 +1,30 @@
+# Large data files
+data/raw/
+data/external/
+*.gctx
+*.gct
+
+# Conda / Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.env
+.venv
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*_executed.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Results (regenerable) — keep CSVs but not large parquets
+data/processed/*.parquet
+
+# Keep processed gene lists (small text files)
+!data/processed/*.txt
