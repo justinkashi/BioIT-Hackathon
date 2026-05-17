@@ -1,6 +1,8 @@
-# Large data files
-data/raw/
-data/external/
+# Large data files — raw downloads excluded, but track directory placeholders
+data/raw/*
+data/external/*
+!data/raw/.gitkeep
+!data/external/.gitkeep
 *.gctx
 *.gct
 
@@ -26,5 +28,7 @@ Thumbs.db
 # Results (regenerable) — keep CSVs but not large parquets
 data/processed/*.parquet
 
-# Keep processed gene lists (small text files)
+# Keep processed gene lists (small text files) and directory placeholder
 !data/processed/*.txt
+!data/processed/.gitkeep
+!results/figures/.gitkeep

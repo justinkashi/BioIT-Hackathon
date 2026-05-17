@@ -28,5 +28,6 @@ dependencies:
     - torch==2.2.2
     - cmapPy==4.1.0
     - adjustText==1.1.1
+    - matplotlib-venn==1.1.1
     - leidenalg==0.10.2
     - python-igraph==0.11.4
